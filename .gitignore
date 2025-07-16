@@ -202,3 +202,7 @@ poetry.toml
 
 # LSP config files
 pyrightconfig.json
+
+# Processed data
+data/processed/*
+!data/processed/.gitkeep

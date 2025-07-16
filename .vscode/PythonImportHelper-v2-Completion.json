@@ -1,11 +1,45 @@
 [
     {
-        "label": "os",
+        "label": "logging",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "numpy.typing",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy.typing",
+        "description": "numpy.typing",
+        "detail": "numpy.typing",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
         "documentation": {}
     },
     {
@@ -18,12 +52,45 @@
         "documentation": {}
     },
     {
-        "label": "csv",
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "csv",
-        "description": "csv",
-        "detail": "csv",
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
         "documentation": {}
     },
     {
@@ -36,7 +103,7 @@
         "documentation": {}
     },
     {
-        "label": "List",
+        "label": "Optional",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -44,7 +111,7 @@
         "documentation": {}
     },
     {
-        "label": "Dict",
+        "label": "TypedDict",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -52,11 +119,12 @@
         "documentation": {}
     },
     {
-        "label": "DicomViewer",
-        "importPath": "src.core.dicom_viewer",
-        "description": "src.core.dicom_viewer",
+        "label": "pydicom",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "src.core.dicom_viewer",
+        "importPath": "pydicom",
+        "description": "pydicom",
+        "detail": "pydicom",
         "documentation": {}
     },
     {
@@ -69,68 +137,334 @@
         "documentation": {}
     },
     {
-        "label": "FileManager",
-        "importPath": "src.utils.file_manager",
-        "description": "src.utils.file_manager",
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
         "isExtraImport": true,
-        "detail": "src.utils.file_manager",
+        "detail": "concurrent.futures",
         "documentation": {}
     },
     {
-        "label": "ImageProcessor",
-        "importPath": "src.image_processor.image_processor",
-        "description": "src.image_processor.image_processor",
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
         "isExtraImport": true,
-        "detail": "src.image_processor.image_processor",
+        "detail": "concurrent.futures",
         "documentation": {}
     },
     {
-        "label": "HistogramEqualizationStrategy",
-        "importPath": "src.image_processor.strategies",
-        "description": "src.image_processor.strategies",
+        "label": "threading",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "src.image_processor.strategies",
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
         "documentation": {}
     },
     {
-        "label": "GaussianBlurStrategy",
-        "importPath": "src.image_processor.strategies",
-        "description": "src.image_processor.strategies",
+        "label": "RAW_DIR",
+        "importPath": "config",
+        "description": "config",
         "isExtraImport": true,
-        "detail": "src.image_processor.strategies",
+        "detail": "config",
         "documentation": {}
     },
     {
-        "label": "CannyEdgeDetectionStrategy",
-        "importPath": "src.image_processor.strategies",
-        "description": "src.image_processor.strategies",
+        "label": "PROCESSED_DIR",
+        "importPath": "config",
+        "description": "config",
         "isExtraImport": true,
-        "detail": "src.image_processor.strategies",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "CSV_FILE",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "ENTROPY_EPSILON",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "\\",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "ImageFilter",
+        "importPath": "filters.base",
+        "description": "filters.base",
+        "isExtraImport": true,
+        "detail": "filters.base",
+        "documentation": {}
+    },
+    {
+        "label": "HistogramEqualizationFilter",
+        "importPath": "filters.histogram_equalization",
+        "description": "filters.histogram_equalization",
+        "isExtraImport": true,
+        "detail": "filters.histogram_equalization",
+        "documentation": {}
+    },
+    {
+        "label": "GaussianBlurFilter",
+        "importPath": "filters.gaussian_blur",
+        "description": "filters.gaussian_blur",
+        "isExtraImport": true,
+        "detail": "filters.gaussian_blur",
+        "documentation": {}
+    },
+    {
+        "label": "CannyEdgeFilter",
+        "importPath": "filters.canny",
+        "description": "filters.canny",
+        "isExtraImport": true,
+        "detail": "filters.canny",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "ImageFilter",
+        "kind": 6,
+        "importPath": "filters.base",
+        "description": "filters.base",
+        "peekOfCode": "class ImageFilter(ABC):\n    \"\"\"\n    Abstract base class for image filtering operations.\n    All image filters must inherit from this class and implement\n    the apply() method. The class provides common input validation\n    and logging functionality.\n    Example:\n        class MyFilter(ImageFilter):\n            def apply(self, image: npt.NDArray[np.uint8]) -> npt.NDArray[np.uint8]:\n                self._validate_input(image)",
+        "detail": "filters.base",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "filters.base",
+        "description": "filters.base",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass ImageFilter(ABC):\n    \"\"\"\n    Abstract base class for image filtering operations.\n    All image filters must inherit from this class and implement\n    the apply() method. The class provides common input validation\n    and logging functionality.\n    Example:\n        class MyFilter(ImageFilter):\n            def apply(self, image: npt.NDArray[np.uint8]) -> npt.NDArray[np.uint8]:",
+        "detail": "filters.base",
+        "documentation": {}
+    },
+    {
+        "label": "CannyEdgeFilter",
+        "kind": 6,
+        "importPath": "filters.canny",
+        "description": "filters.canny",
+        "peekOfCode": "class CannyEdgeFilter(ImageFilter):\n    def __init__(self, low_threshold: float = 100.0, high_threshold: float = 200.0):\n        \"\"\"\n        Initialize Canny edge detector with thresholds.\n        Args:\n            low_threshold (float): Lower threshold for edge detection\n            high_threshold (float): Higher threshold for edge detection\n        \"\"\"\n        self.low_threshold = low_threshold\n        self.high_threshold = high_threshold",
+        "detail": "filters.canny",
+        "documentation": {}
+    },
+    {
+        "label": "GaussianBlurFilter",
+        "kind": 6,
+        "importPath": "filters.gaussian_blur",
+        "description": "filters.gaussian_blur",
+        "peekOfCode": "class GaussianBlurFilter(ImageFilter):\n    def __init__(self, kernel_size: int = 5, sigma: float = 0.0):\n        \"\"\"\n        Initialize the GaussianBlurFilter.\n        Args:\n            kernel_size (int): Size of the Gaussian kernel (must be odd and positive).\n            sigma (float): Standard deviation in X and Y direction.\n        Raises:\n            ValueError: If kernel_size is even or not positive.\n        \"\"\"",
+        "detail": "filters.gaussian_blur",
+        "documentation": {}
+    },
+    {
+        "label": "HistogramEqualizationFilter",
+        "kind": 6,
+        "importPath": "filters.histogram_equalization",
+        "description": "filters.histogram_equalization",
+        "peekOfCode": "class HistogramEqualizationFilter(ImageFilter):\n    def apply(self, image: npt.NDArray[np.uint8]) -> npt.NDArray[np.uint8]:\n        \"\"\"\n        Manually perform histogram equalization on a grayscale image.\n        Args:\n            image (npt.NDArray[np.uint8]): Grayscale image.\n        Returns:\n            npt.NDArray[np.uint8]: Equalized image.\n        Raises:\n            ValueError: If image is empty or not 2D.",
+        "detail": "filters.histogram_equalization",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "BASE_DIR = Path(__file__).parent\nRAW_DIR = BASE_DIR / \"data\" / \"raw\"\nPROCESSED_DIR = BASE_DIR / \"data\" / \"processed\"\nCSV_FILE = RAW_DIR / \"CS390_Midterm_xray_chest.csv\"\nMETRICS_FILENAME = \"metrics.csv\"\nLOGS_DIRECTORY = BASE_DIR / \"logs\"\nLOG_FILE = LOGS_DIRECTORY / \"app.log\"\nMAX_WORKERS = 4\nENTROPY_EPSILON = 1e-7\nGAUSSIAN_KERNEL = (5, 5)",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "RAW_DIR",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "RAW_DIR = BASE_DIR / \"data\" / \"raw\"\nPROCESSED_DIR = BASE_DIR / \"data\" / \"processed\"\nCSV_FILE = RAW_DIR / \"CS390_Midterm_xray_chest.csv\"\nMETRICS_FILENAME = \"metrics.csv\"\nLOGS_DIRECTORY = BASE_DIR / \"logs\"\nLOG_FILE = LOGS_DIRECTORY / \"app.log\"\nMAX_WORKERS = 4\nENTROPY_EPSILON = 1e-7\nGAUSSIAN_KERNEL = (5, 5)\nIMAGE_SIZE = (256, 256)",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "PROCESSED_DIR",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "PROCESSED_DIR = BASE_DIR / \"data\" / \"processed\"\nCSV_FILE = RAW_DIR / \"CS390_Midterm_xray_chest.csv\"\nMETRICS_FILENAME = \"metrics.csv\"\nLOGS_DIRECTORY = BASE_DIR / \"logs\"\nLOG_FILE = LOGS_DIRECTORY / \"app.log\"\nMAX_WORKERS = 4\nENTROPY_EPSILON = 1e-7\nGAUSSIAN_KERNEL = (5, 5)\nIMAGE_SIZE = (256, 256)\nSHOW_GRID = False",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "CSV_FILE",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "CSV_FILE = RAW_DIR / \"CS390_Midterm_xray_chest.csv\"\nMETRICS_FILENAME = \"metrics.csv\"\nLOGS_DIRECTORY = BASE_DIR / \"logs\"\nLOG_FILE = LOGS_DIRECTORY / \"app.log\"\nMAX_WORKERS = 4\nENTROPY_EPSILON = 1e-7\nGAUSSIAN_KERNEL = (5, 5)\nIMAGE_SIZE = (256, 256)\nSHOW_GRID = False",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "METRICS_FILENAME",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "METRICS_FILENAME = \"metrics.csv\"\nLOGS_DIRECTORY = BASE_DIR / \"logs\"\nLOG_FILE = LOGS_DIRECTORY / \"app.log\"\nMAX_WORKERS = 4\nENTROPY_EPSILON = 1e-7\nGAUSSIAN_KERNEL = (5, 5)\nIMAGE_SIZE = (256, 256)\nSHOW_GRID = False",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "LOGS_DIRECTORY",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "LOGS_DIRECTORY = BASE_DIR / \"logs\"\nLOG_FILE = LOGS_DIRECTORY / \"app.log\"\nMAX_WORKERS = 4\nENTROPY_EPSILON = 1e-7\nGAUSSIAN_KERNEL = (5, 5)\nIMAGE_SIZE = (256, 256)\nSHOW_GRID = False",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "LOG_FILE",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "LOG_FILE = LOGS_DIRECTORY / \"app.log\"\nMAX_WORKERS = 4\nENTROPY_EPSILON = 1e-7\nGAUSSIAN_KERNEL = (5, 5)\nIMAGE_SIZE = (256, 256)\nSHOW_GRID = False",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "MAX_WORKERS",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "MAX_WORKERS = 4\nENTROPY_EPSILON = 1e-7\nGAUSSIAN_KERNEL = (5, 5)\nIMAGE_SIZE = (256, 256)\nSHOW_GRID = False",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "ENTROPY_EPSILON",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "ENTROPY_EPSILON = 1e-7\nGAUSSIAN_KERNEL = (5, 5)\nIMAGE_SIZE = (256, 256)\nSHOW_GRID = False",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "GAUSSIAN_KERNEL",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "GAUSSIAN_KERNEL = (5, 5)\nIMAGE_SIZE = (256, 256)\nSHOW_GRID = False",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_SIZE",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "IMAGE_SIZE = (256, 256)\nSHOW_GRID = False",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "SHOW_GRID",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "SHOW_GRID = False",
+        "detail": "config",
         "documentation": {}
     },
     {
         "label": "ImageMetrics",
-        "importPath": "src.metrics.image_metrics",
-        "description": "src.metrics.image_metrics",
-        "isExtraImport": true,
-        "detail": "src.metrics.image_metrics",
-        "documentation": {}
-    },
-    {
-        "label": "Visualizer",
-        "importPath": "src.utils.visualizer",
-        "description": "src.utils.visualizer",
-        "isExtraImport": true,
-        "detail": "src.utils.visualizer",
-        "documentation": {}
-    },
-    {
-        "label": "FileManager",
         "kind": 6,
-        "importPath": "src.utils.string_utils",
-        "description": "src.utils.string_utils",
-        "peekOfCode": "class FileManager:\n    @staticmethod\n    def load_dicom_viewer(filepath: str) -> DicomViewer:\n        \"\"\"\n        Load and return a DicomViewer object.\n        \"\"\"\n        return DicomViewer(filepath)\n    @staticmethod\n    def load_metadata(csv_path: str) -> List[Dict]:\n        \"\"\"",
-        "detail": "src.utils.string_utils",
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class ImageMetrics(TypedDict):\n    mean: float\n    std: float\n    entropy: float\n    michelson_contrast: float\ndef clean_processed_directory(directory: Path) -> None:\n    \"\"\"Remove all files from the processed directory except .gitkeep.\"\"\"\n    if directory.exists():\n        for file in directory.glob('*'):\n            if file.name != '.gitkeep':",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "clean_processed_directory",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def clean_processed_directory(directory: Path) -> None:\n    \"\"\"Remove all files from the processed directory except .gitkeep.\"\"\"\n    if directory.exists():\n        for file in directory.glob('*'):\n            if file.name != '.gitkeep':\n                try:\n                    file.unlink()\n                    logger.info(f\"Removed: {file}\")\n                except Exception as e:\n                    logger.error(f\"Failed to remove {file}: {e}\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "load_dicom",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def load_dicom(filepath: Path) -> Optional[tuple[np.ndarray, dict]]:\n    \"\"\"\n    Load and normalize DICOM image\n    Args:\n        filepath: Path to DICOM file\n    Returns:\n        tuple: (normalized image array, metadata dictionary)\n    \"\"\"\n    try:\n        ds = pydicom.dcmread(filepath)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "process_image",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def process_image(image: np.ndarray) -> dict[str, np.ndarray]:\n    \"\"\"Apply all processing steps using strategy pattern.\"\"\"\n    if image.shape != IMAGE_SIZE:\n        image = cv2.resize(image, IMAGE_SIZE)\n    filters: dict[str, ImageFilter] = {\n        'hist_eq': HistogramEqualizationFilter(),\n        'gaussian': GaussianBlurFilter(),\n        'canny': CannyEdgeFilter()\n    }\n    processed = {'original': image}",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_metrics",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def calculate_metrics(image: np.ndarray) -> ImageMetrics:\n    \"\"\"\n    Calculate required image metrics.\n    Args:\n        image: Input image array (uint8 or compatible format)\n    Returns:\n        dict: Dictionary containing computed metrics\n    \"\"\"\n    img = image.astype(np.float32)\n    hist = cv2.calcHist([image], [0], None, [256], [0, 256])",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "display_sample_grid",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def display_sample_grid(image: np.ndarray, processed_images: dict[str, np.ndarray]) -> None:\n    fig, axes = plt.subplots(2, 3, figsize=(15, 10))\n    fig.suptitle('Image Processing Results', fontsize=16)\n    axes[0, 0].imshow(image, cmap='gray')\n    axes[0, 0].set_title('Original')\n    axes[0, 0].axis('off')\n    positions = [(0, 1), (0, 2), (1, 0), (1, 1), (1, 2)]\n    for (label, img), (row, col) in zip(processed_images.items(), positions):\n        if label != 'original':\n            axes[row, col].imshow(img, cmap='gray')",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "process_single_file",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def process_single_file(dcm_file: Path) -> Optional[list[dict]]:\n    try:\n        logger.info(f\"Processing {dcm_file.name}\")\n        loaded = load_dicom(dcm_file)\n        if not loaded:\n            return None\n        image, metadata = loaded\n        processed = process_image(image)\n        save_processed_images(processed, dcm_file.name, PROCESSED_DIR)\n        results = []",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "save_processed_images",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def save_processed_images(processed_images: dict, filename: str, output_dir: Path) -> None:\n    base_name = filename.split('.')[0]\n    for process_type, img in processed_images.items():\n        if process_type == 'original':\n            continue\n        output_name = f\"processed_{base_name}_{process_type}.png\"\n        output_path = output_dir / output_name\n        cv2.imwrite(str(output_path), img)\ndef process_all_images() -> None:\n    clean_processed_directory(PROCESSED_DIR)",
+        "detail": "main",
         "documentation": {}
     },
     {
@@ -138,7 +472,34 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def process_all_images():\n    metadata_entries = FileManager.load_metadata(\"metadata.csv\")\n    all_results = []\n    for entry in metadata_entries:\n        filename = entry['filename']\n        full_path = f\"data/raw/{filename}\"\n        try:\n            viewer = FileManager.load_dicom_viewer(full_path)\n            original_img = viewer.pixel_array\n            base_metadata = FileManager.extract_metadata(viewer, entry)",
+        "peekOfCode": "def process_all_images() -> None:\n    clean_processed_directory(PROCESSED_DIR)\n    PROCESSED_DIR.mkdir(exist_ok=True)\n    dicom_files = list(RAW_DIR.glob('*.dcm'))\n    if not dicom_files:\n        logger.warning(f\"No DICOM files found in {RAW_DIR}. Exiting.\")\n        return\n    logger.info(f\"Found {len(dicom_files)} DICOM files in {RAW_DIR}\")\n    results = []\n    first_image = None",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def main():\n    base_dir = Path(__file__).parent\n    process_all_images()\n    logger.info(f\"Processing completed in {time.time() - start:.2f} seconds\")\nif __name__ == \"__main__\":\n    main()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "start = time.time()\n# Configure logging\nfor handler in logging.root.handlers[:]:\n    logging.root.removeHandler(handler)\n# Configure logging to write ONLY to file\nlogging.basicConfig(\n    level=logging.INFO,\n    format='%(asctime)s - %(levelname)s - %(message)s',\n    handlers=[\n        logging.FileHandler(LOG_FILE, mode='w', encoding='utf-8')",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass ImageMetrics(TypedDict):\n    mean: float\n    std: float\n    entropy: float\n    michelson_contrast: float\ndef clean_processed_directory(directory: Path) -> None:\n    \"\"\"Remove all files from the processed directory except .gitkeep.\"\"\"\n    if directory.exists():\n        for file in directory.glob('*'):",
         "detail": "main",
         "documentation": {}
     }
