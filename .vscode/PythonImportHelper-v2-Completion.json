@@ -1,0 +1,145 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "DicomViewer",
+        "importPath": "src.core.dicom_viewer",
+        "description": "src.core.dicom_viewer",
+        "isExtraImport": true,
+        "detail": "src.core.dicom_viewer",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "FileManager",
+        "importPath": "src.utils.file_manager",
+        "description": "src.utils.file_manager",
+        "isExtraImport": true,
+        "detail": "src.utils.file_manager",
+        "documentation": {}
+    },
+    {
+        "label": "ImageProcessor",
+        "importPath": "src.image_processor.image_processor",
+        "description": "src.image_processor.image_processor",
+        "isExtraImport": true,
+        "detail": "src.image_processor.image_processor",
+        "documentation": {}
+    },
+    {
+        "label": "HistogramEqualizationStrategy",
+        "importPath": "src.image_processor.strategies",
+        "description": "src.image_processor.strategies",
+        "isExtraImport": true,
+        "detail": "src.image_processor.strategies",
+        "documentation": {}
+    },
+    {
+        "label": "GaussianBlurStrategy",
+        "importPath": "src.image_processor.strategies",
+        "description": "src.image_processor.strategies",
+        "isExtraImport": true,
+        "detail": "src.image_processor.strategies",
+        "documentation": {}
+    },
+    {
+        "label": "CannyEdgeDetectionStrategy",
+        "importPath": "src.image_processor.strategies",
+        "description": "src.image_processor.strategies",
+        "isExtraImport": true,
+        "detail": "src.image_processor.strategies",
+        "documentation": {}
+    },
+    {
+        "label": "ImageMetrics",
+        "importPath": "src.metrics.image_metrics",
+        "description": "src.metrics.image_metrics",
+        "isExtraImport": true,
+        "detail": "src.metrics.image_metrics",
+        "documentation": {}
+    },
+    {
+        "label": "Visualizer",
+        "importPath": "src.utils.visualizer",
+        "description": "src.utils.visualizer",
+        "isExtraImport": true,
+        "detail": "src.utils.visualizer",
+        "documentation": {}
+    },
+    {
+        "label": "FileManager",
+        "kind": 6,
+        "importPath": "src.utils.string_utils",
+        "description": "src.utils.string_utils",
+        "peekOfCode": "class FileManager:\n    @staticmethod\n    def load_dicom_viewer(filepath: str) -> DicomViewer:\n        \"\"\"\n        Load and return a DicomViewer object.\n        \"\"\"\n        return DicomViewer(filepath)\n    @staticmethod\n    def load_metadata(csv_path: str) -> List[Dict]:\n        \"\"\"",
+        "detail": "src.utils.string_utils",
+        "documentation": {}
+    },
+    {
+        "label": "process_all_images",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def process_all_images():\n    metadata_entries = FileManager.load_metadata(\"metadata.csv\")\n    all_results = []\n    for entry in metadata_entries:\n        filename = entry['filename']\n        full_path = f\"data/raw/{filename}\"\n        try:\n            viewer = FileManager.load_dicom_viewer(full_path)\n            original_img = viewer.pixel_array\n            base_metadata = FileManager.extract_metadata(viewer, entry)",
+        "detail": "main",
+        "documentation": {}
+    }
+]
